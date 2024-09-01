@@ -17,17 +17,17 @@ class MainActivity : ComponentActivity() {
         setContentView(view)
 
         val books = mutableListOf<Book>(
-            Book("@drawable/solitude","Solitude","by Gabriel Garcia",2.5),
-            Book("@drawable/nostra","Terra Nostra","by Carios Fuentes",2),
-            Book("@drawable/angels","Angles & Demons","by Dan Brown",3),
-            Book("@drawable/sword","The Sword Thief","by Peter Lerangis",3.5),
-            Book("@drawable/blood","Bloodline","by James Rollins",2),
-            Book("@drawable/spirits","The House of the Spirits","by Isabel",5),
-            Book("@drawable/humming","Humming","by LuisAlberto",1),
-            Book("@drawable/blood","Bloodline","by James Rollins",2),
-            Book("@drawable/spirits","The House of the Spirits","by Isabel",5),
+            Book("@drawable/solitude", "Solitude", "by Gabriel Garcia", 2.5),
+            Book("@drawable/nostra", "Terra Nostra", "by Carios Fuentes", 2),
+            Book("@drawable/angels", "Angles & Demons", "by Dan Brown", 3),
+            Book("@drawable/sword", "The Sword Thief", "by Peter Lerangis", 3.5),
+            Book("@drawable/blood", "Bloodline", "by James Rollins", 2),
+            Book("@drawable/spirits", "The House of the Spirits", "by Isabel", 5),
+            Book("@drawable/humming", "Humming", "by LuisAlberto", 1),
+            Book("@drawable/blood", "Bloodline", "by James Rollins", 2),
+            Book("@drawable/spirits", "The House of the Spirits", "by Isabel", 5),
         )
-        val bookAdapter =BookAdapter(books)
+        val bookAdapter = BookAdapter(books)
         binding.rc.adapter = bookAdapter
 
 
@@ -36,32 +36,36 @@ class MainActivity : ComponentActivity() {
         }
 
         binding.navigationView.setNavigationItemSelectedListener {
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.reviews -> {
-                    Toast.makeText(this,R.string.reviews_clicked,Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, R.string.reviews_clicked, Toast.LENGTH_SHORT).show()
                     binding.drawerLayout.close()
                     true
                 }
+
                 R.id.favorite -> {
                     Toast.makeText(this, R.string.favorite_clicked, Toast.LENGTH_SHORT).show()
                     binding.drawerLayout.close()
                     true
                 }
+
                 R.id.search -> {
                     Toast.makeText(this, R.string.search_clicked, Toast.LENGTH_SHORT).show()
                     binding.drawerLayout.close()
                     true
                 }
+
                 R.id.profile -> {
                     Toast.makeText(this, R.string.profile_clicked, Toast.LENGTH_SHORT).show()
                     binding.drawerLayout.close()
                     true
                 }
+
                 R.id.settings -> {
                     Toast.makeText(this, R.string.settings_clicked, Toast.LENGTH_SHORT).show()
                     binding.drawerLayout.close()
                     true
-            }
+                }
 
                 else -> false
             }
