@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Book_Store</string>
+    <string name="books">Books</string>
+    <string name="name">Name</string>
+    <string name="reviews">Reviews</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="bell">Bell\n</string>
+    <string name="want_to_read">Want to read</string>
+    <string name="reviews_clicked">Reviews Clicked</string>
+    <string name="favorite_clicked">Favorite Clicked</string>
+    <string name="settings_clicked">Settings Clicked</string>
+    <string name="profile_clicked">Profile Clicked</string>
+    <string name="search_clicked">Search Clicked</string>
+</resources>

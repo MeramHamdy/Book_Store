@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1">
+    <item android:id="@+id/reviews"
+        android:title="@string/reviews"
+        android:icon="@drawable/star"
+        android:iconTint="@color/teal_700"></item>
+    <item android:id="@+id/favorite"
+        android:title="@string/favorite"
+        android:icon="@drawable/favorite"
+        android:iconTint="@color/teal_700"></item>
+        <item android:id="@+id/search"
+            android:title="@string/search"
+            android:icon="@drawable/search"
+            android:iconTint="@color/teal_700"></item>
+    </group>
+
+    <group
+        android:id="@+id/group2">
+    <item android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/profile"
+        android:iconTint="@color/teal_700"></item>
+    <item android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings"
+        android:iconTint="@color/teal_700"></item>
+    </group>
+</menu>
